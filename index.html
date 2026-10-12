@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ta" data-theme="gold">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BhaktiLahari (பக்தி அலைகள்) - All God Devotional Songs & Stotras Lyrics</title>
+  <meta name="description" content="அனைத்து இந்து தெய்வங்களின் புனித பாடல் வரிகள், கவசங்கள், அஷ்டோத்திரங்கள் மற்றும் ஸ்தோத்திரங்கள். தமிழ் மற்றும் ஆங்கில உச்சரிப்பு, பொருள் மற்றும் பூஜை பயன்முறையுடன்.">
+  <meta name="keywords" content="devotional lyrics, ganesha kavacham lyrics, vinayagar agaval, shiva stotram, kandha sashti kavasam, hanuman chalisa lyrics tamil, stotram lyrics">
+  
+  <!-- Favicon icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Mukta+Malar:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand" id="brand-link" title="BhaktiLahari முகப்பு">
+        <div class="brand-icon">🕉️</div>
+        <div class="brand-text">
+          <span class="brand-title">BhaktiLahari</span>
+          <span class="brand-subtitle" id="nav-brand-subtitle">பக்தி பாடல் வரிகள் தளம்</span>
+        </div>
+      </a>
+
+      <!-- Universal Search Box -->
+      <div class="nav-search-wrap">
+        <span class="search-icon-inside">🔍</span>
+        <input 
+          type="text" 
+          id="nav-search" 
+          class="search-input" 
+          placeholder="தெய்வம் அல்லது பாடல் தேடுக (எ.கா: விநாயகர், கவசம், Shiva)..." 
+          autocomplete="off"
+        />
+        <div class="search-results-box" id="search-results"></div>
+      </div>
+
+      <!-- Header Action Controls -->
+      <div class="nav-actions">
+        <!-- Language Selector Dropdown -->
+        <div class="lang-dropdown-wrap" id="lang-dropdown-wrap">
+          <button class="btn-icon" id="nav-lang-btn" title="மொழி மாற்ற / Change Language" aria-label="Change Language" aria-expanded="false">
+            🌐
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="menu">
+            <button class="lang-option-btn active" data-lang="ta" role="menuitem">
+              <span class="lang-flag">🇮🇳</span>
+              <div class="lang-text-group">
+                <span class="lang-name">தமிழ்</span>
+                <span class="lang-sub">Tamil</span>
+              </div>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option-btn" data-lang="en" role="menuitem">
+              <span class="lang-flag">🇬🇧</span>
+              <div class="lang-text-group">
+                <span class="lang-name">English</span>
+                <span class="lang-sub">English</span>
+              </div>
+              <span class="lang-check">✓</span>
+            </button>
+            <button class="lang-option-btn" data-lang="te" role="menuitem">
+              <span class="lang-flag">🇮🇳</span>
+              <div class="lang-text-group">
+                <span class="lang-name">తెలుగు</span>
+                <span class="lang-sub">Telugu</span>
+              </div>
+              <span class="lang-check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn-icon" id="nav-bell-btn" title="கோவில் மணி ஒலிக்க (Temple Bell)">
+          🔔
+        </button>
+        <button class="btn-icon" id="nav-fav-btn" title="விருப்பமான பாடல்கள் (Favorites)">
+          ❤️
+        </button>
+        <button class="btn-icon" id="theme-toggle-btn" title="தீம் மாற்ற (Change Theme)">
+          🎨
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Dynamic View Container -->
+  <main class="container" id="main-content" style="min-height: 75vh; padding-bottom: 4rem;">
+    <!-- Content injected via app.js router -->
+  </main>
+
+  <!-- Fullscreen Zen / Pooja Mode Altar Modal -->
+  <div class="pooja-modal" id="pooja-modal">
+    <!-- Injected dynamically in pooja mode -->
+  </div>
+
+  <!-- 108 Japam Chanting Counter Dialog Modal -->
+  <div class="modal-overlay" id="japam-modal">
+    <div class="modal-dialog" id="japam-dialog">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+
+  <!-- Toast Notification Message -->
+  <div class="toast-msg" id="toast-box"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <span style="font-size: 1.5rem;">🪔</span>
+          <span style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff;">BhaktiLahari</span>
+        </div>
+        <p id="footer-desc" style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+          அனைத்து பக்தர்களுக்கும் தூய பக்தி, ஞானம், மற்றும் ஆன்மீக அமைதியை நல்கும் திவ்ய ஸ்தோத்திரங்கள் மற்றும் பாடல் வரிகள் தளம்.
+        </p>
+        <div class="footer-mantra" id="footer-mantra">
+          “லோகா: சமஸ்தா: சுகினோ பவந்து” • ஓம் சாந்தி: சாந்தி: சாந்தி:
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+        <div>
+          <h4 id="footer-gods-head" style="color: var(--gold-light); font-size: 0.9rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">தெய்வங்கள்</h4>
+          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><a href="#god/ganesha" style="color: inherit; text-decoration: none;">விநாயகர் (Ganesha)</a></li>
+            <li><a href="#god/shiva" style="color: inherit; text-decoration: none;">சிவபெருமான் (Shiva)</a></li>
+            <li><a href="#god/murugan" style="color: inherit; text-decoration: none;">முருகன் (Murugan)</a></li>
+            <li><a href="#god/hanuman" style="color: inherit; text-decoration: none;">ஆஞ்சநேயர் (Hanuman)</a></li>
+            <li><a href="#god/lakshmi" style="color: inherit; text-decoration: none;">மஹாலக்ஷ்மி (Lakshmi)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 id="footer-songs-head" style="color: var(--gold-light); font-size: 0.9rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">முக்கிய பாடல்கள்</h4>
+          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><a href="#song/ganesha-kavacham" style="color: inherit; text-decoration: none;">விநாயகர் கவசம்</a></li>
+            <li><a href="#song/kandha-sashti-kavasam" style="color: inherit; text-decoration: none;">கந்த சஷ்டி கவசம்</a></li>
+            <li><a href="#song/shiva-tandava-stotram" style="color: inherit; text-decoration: none;">சிவ தாண்டவ ஸ்தோத்திரம்</a></li>
+            <li><a href="#song/hanuman-chalisa" style="color: inherit; text-decoration: none;">ஹனுமான் சாலிசா</a></li>
+            <li><a href="#song/venkateswara-suprabhatam" style="color: inherit; text-decoration: none;">வெங்கடேச சுப்ரபாதம்</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span id="footer-bottom-copy">© 2026 BhaktiLahari Devotional Portal. Created with Divine Devotion & Love.</span>
+    </div>
+  </footer>
+
+  <!-- App Bootstrap Module -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
